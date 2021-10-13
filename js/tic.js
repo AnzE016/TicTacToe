@@ -197,4 +197,15 @@ function changeC(){
     p.appendChild(player1);
     p.appendChild(c);
     p.appendChild(y);
+
+    for(let i=0; i<arr.length; i++){
+        if (arr[i] == -1){
+            box = document.getElementById(i);
+            box.style.backgroundColor = color1[1];
+        }
+        if(arr[i] == 1){
+            box = document.getElementById(i);
+            box.style.backgroundColor = color1[0];
+        }
+    }
 }
